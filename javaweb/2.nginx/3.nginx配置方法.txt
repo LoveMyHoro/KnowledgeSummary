@@ -1,0 +1,12 @@
+1.注意这两个配置就行，具体为什么见收藏的csdn博客
+
+       	location / {
+            root   html/dist;     //这个是前端导出的dist文件所在的根目录，随着导出的文件名称和位置而变化
+            index  index.html index.htm;     //.这是运行nginx首先寻找的静态资源
+            try_files $uri $uri     / /index.html;//每次匹配url路径时候找不到对应静态资源时候调制跳转到index.html文件,然后在vue-router中寻找
+        }
+        location /api{
+            rewrite  ^/api/(.*)$ /$1 break;     //在前端的服务器重写请求的url，不然向后端发送的请求还是以api开头的,比如：
+            proxy_pass  http://localhost:8080;  #后端接口api
+            index index.html;
+        }

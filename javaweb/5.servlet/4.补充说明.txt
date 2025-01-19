@@ -1,0 +1,7 @@
+1.servlet并不是是容器什么的，它是每一个用来处理前端请求的Class类
+2.servlet是单例的
+3.default servlet：用来处理静态资源
+4.servletconfig：每个servlet都有自己的servletconfig,为servlet提供初始化参数，是多例的
+5.servletcontext：提供全局参数，是单例的
+	用法：1.获取文件或目录的磁盘真实路径
+		   2.获取项目的上下文路径

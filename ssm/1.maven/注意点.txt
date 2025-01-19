@@ -1,0 +1,5 @@
+1.maven根目录有个lib目录，但是maven不能为自己导包
+2.首次安装maven时需要配置maven_home环境变量，还要修改setting.xml文件
+3.在 Maven 的 pom.xml 文件中，<modelVersion> 元素指定了该项目对象模型（Project Object Model，POM）的版本。
+4.如果项目是ssm项目，pom中打包方式要改为war
+5.父工程打包方式为pom方式，不打包也不写代码

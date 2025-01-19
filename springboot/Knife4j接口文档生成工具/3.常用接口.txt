@@ -1,0 +1,5 @@
+1.在类上使用
+	（1@Tag(name="Controller类名",description="Controller类描述") 
+2.在方法上使用
+	  (1)@Operation(summary = "接口名", description = "接口描述")
+	  (2)@ApiOperationSupport(author = "接口的作者",order = 接口的排序)

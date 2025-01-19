@@ -1,0 +1,1 @@
+Tomcat 负责加载、实例化、初始化、调用和销毁 Servlet。当一个 Web 应用部署到 Tomcat 时，Tomcat 会根据 web.xml 或注解（如 @WebServlet）查找 Servlet 类，并根据请求的 URL 映射关系调用相应的 Servlet 进行处理。

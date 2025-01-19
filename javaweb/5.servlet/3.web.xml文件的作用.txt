@@ -1,0 +1,9 @@
+一、Servlet 配置：
+利用 <servlet> 元素可以完成 Servlet 类的声明，其中包括指定 Servlet 的全限定名和一个逻辑名称，从而为 Servlet 赋予一个可识别的标识。
+通过 <servlet-mapping> 元素将已声明的 Servlet 映射到相应的 URL 模式，使 Servlet 容器根据请求的 URL 路径找到对应的 Servlet 来处理请求。
+二、Filter 配置：
+使用 <filter> 元素来声明 Filter 类，同时可以设置其初始化参数，为 Filter 的操作提供初始信息。
+<filter-mapping> 元素将声明的 Filter 映射到特定的 URL 模式，以此确定哪些请求需要经过该 Filter 的过滤处理。
+三、Listener 配置：
+通过 <listener> 元素声明各种监听器，例如 ServletContextListener 等，让其监听 Java Web 应用程序或会话的生命周期事件，从而在不同阶段执行相应的操作。
+四，根据返回文件的拓展名在web.xml中的映射，设置返回的Content-type.如果是动态资源可能需要自己手动设置Content-type（这部分知识点仅限于javaweb）

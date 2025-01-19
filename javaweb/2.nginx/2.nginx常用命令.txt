@@ -1,0 +1,9 @@
+注意：
+	1.不要直接双击nginx.exe，直接运行nginx.exe会导致修改配置无效启动等不生效
+	2.这些命令都是在nginx目录下的cmd窗口运行的
+
+1.启动nginx：start nginx
+2.修改nginx配置文件后重新加载配置文件并重启：nginx -s reload
+3.关闭nginx服务：
+	快速停止命令：nginx -s stop
+	完整有序的关闭命令：nginx -s quit

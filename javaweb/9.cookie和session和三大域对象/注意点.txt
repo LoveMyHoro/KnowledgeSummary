@@ -1,0 +1,2 @@
+1.cookie和session都可以存储一些数据，但是session比cookie更丰富且session的使用离不开cookie
+2.cookie的值就放在cookie中，而session的值放在服务器中，但会将作为密钥的jSessionId放到cookie中
