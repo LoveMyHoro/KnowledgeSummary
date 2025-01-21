@@ -1,0 +1,3 @@
+注意：在ssm中就已经实现了注解+配置类进行开发，舍弃了xml配置文件。@Controller，@Autowired,@Value注解在spring中就已经出现了，不是springboot独有的
+1.去除了在配置类标记要扫描的包这一步骤
+2.不用配置tomcat了，因为springboot内嵌了tomcat

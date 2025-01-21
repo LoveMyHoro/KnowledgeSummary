@@ -1,0 +1,2 @@
+1.@Controller,@Service,@Mapper标识Bean对象,@Configuration标识配置类
+2.在配置类中利用@ComponentScan扫描包，利用@PropertySource引入外部配置文件，利用@Bean引入外部Bean
