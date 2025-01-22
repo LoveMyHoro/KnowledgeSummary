@@ -1,0 +1,15 @@
+参数校验实现步骤
+
+1.导入相关依赖：引入必要的校验框架依赖（如 javax.validation 和 spring-boot-starter-validation）。
+
+2.在实体类属性上添加相关注解：为实体类的属性添加相应的校验注解，如 @NotNull、@Size、@Email 等，以设定具体的校验规则。
+
+3.在 handler 方法中添加 @Validated 注解：在处理请求的方法中务必添加 @Validated 注解，以确保校验注解的应用，不然不生效。例如：public Object save(@Validated @RequestBody User user) { /* 处理逻辑 */ }。
+
+4.（这个可添加可不添加）使用 BindingResult 处理校验结果：在处理方法中添加 BindingResult 参数且bindingResult要放在要校验的对象旁边，以获取校验结果并处理错误。例如：
+public Object save(@Validated @RequestBody User user, BindingResult bindingResult) {  
+    if (bindingResult.hasErrors()) {  
+        // 处理校验错误  
+    }  
+    // 处理业务逻辑  
+}

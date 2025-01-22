@@ -1,0 +1,3 @@
+1.SpringMvc重点在简化前端参数接收( 形参列表 )和简化后端数据响应(返回值)
+2.Servlet在SpringMVC中全名为DispatcherServlet，用于分发前端发来的请求
+3.HandlerMapping和HandlerAdapter是外部类，可以在配置类中通过@Bean注解注入ioc容器

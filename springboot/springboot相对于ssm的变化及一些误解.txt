@@ -1,3 +1,17 @@
 注意：在ssm中就已经实现了注解+配置类进行开发，舍弃了xml配置文件。@Controller，@Autowired,@Value注解在spring中就已经出现了，不是springboot独有的
-1.去除了在配置类标记要扫描的包这一步骤
-2.不用配置tomcat了，因为springboot内嵌了tomcat
+springboot是在原先的基础上再进行了简化，整合了ssm框架，以前很多需要再配置类中执行的操作都由springboot提前做了
+主要优化的点如下：
+
+1.不用配置Tomcat
+因为Spring Boot内嵌了Tomcat，开发者不需要手动安装和配置外部Tomcat服务器。
+
+2.去除了在配置类标记要扫描的包这一步骤
+使用@SpringBootApplication注解后，Spring Boot会自动扫描当前包及子包中的注解组件。
+
+3.不需要自己在配置类中将HandlerMapping和HandlerAdapter这两个外部Bean加入IOC容器了
+Spring Boot会自动根据配置和依赖注册相关的HandlerMapping和HandlerAdapter，简化了配置过程。其实在ssm中已经通过了@EnableWebMvc注解去除了这个步骤
+
+4.去除了容器初始化类，不需要自己创建IOC容器了
+Spring Boot会在应用启动时自动创建IOC容器，无需手动进行初始化，降低了复杂度。
+
+

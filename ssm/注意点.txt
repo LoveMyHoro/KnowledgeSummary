@@ -1,0 +1,2 @@
+1.在spring中配置类的作用有：利用@ComponentScan扫描包，利用@PropertySource引入外部配置文件，利用@Bean引入外部Bean
+2.在spring+springMVC中，配置类的作用在原先的作用下还包括：向ioc容器在加入HandlerMapping(秘书)和HandlerAdapter(经理)，创建ioc容器并设置servlet的访问地址

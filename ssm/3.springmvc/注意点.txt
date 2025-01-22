@@ -1,0 +1,8 @@
+1.springmvc和javaweb的联系较深，Spring Web MVC是基于Servlet API构建的原始Web框架，从一开始就包含在Spring Framework中。正式名称“Spring Web MVC”来自其源模块的名称（ `spring-webmvc` ），但它通常被称为“Spring MVC”。
+
+2.参数列表默认接收的是Param参数，如果要接收其他参数，要加注解，比如路径参数要加@PathVariable，json参数要加@RequestBody
+
+3.原生jdk不支持json数据，需要自己导入jackson-databind依赖然后在配置类上加上@EnableWebMvc注解，才能通过接收json数据处理post请求
+
+4.@EnableWebMvc这个标签不仅会为配置类添加json处理器，还可以向ioc容器在加入HandlerMapping(秘书)和HandlerAdapter(经理)，所以配置类原先导入这两个外部Bean的两个方法可以注释掉
+5.ServletContext会自动装入ioc容器

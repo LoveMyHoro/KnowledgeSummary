@@ -1,0 +1,2 @@
+1.向ioc容器在加入HandlerMapping(秘书)和HandlerAdapter(经理)
+2.创建ioc容器并设置servlet的访问地址
