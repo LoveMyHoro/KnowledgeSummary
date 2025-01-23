@@ -12,6 +12,6 @@ springboot是在原先的基础上再进行了简化，整合了ssm框架，以�
 Spring Boot会自动根据配置和依赖注册相关的HandlerMapping和HandlerAdapter，简化了配置过程。其实在ssm中已经通过了@EnableWebMvc注解去除了这个步骤
 
 4.去除了容器初始化类，不需要自己创建IOC容器了
-Spring Boot会在应用启动时自动创建IOC容器，无需手动进行初始化，降低了复杂度。
+Spring Boot 采用自动配置机制，它会自动创建 Root 容器和 Web 容器，并且依据类路径中的依赖和配置文件来自动配置这些容器。在 Spring Boot 里，通常不需要继承AbstractAnnotationConfigDispatcherServletInitializer，也不用重写getRootConfigClasses和getServletConfigClasses方法。
 
 

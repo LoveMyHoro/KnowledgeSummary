@@ -1,0 +1,6 @@
+1.springboot不是对ssm框架的替代，它是对spring,springmvc,mybatis的整合和简化。
+是一个快速启动框架，快速搭建项目
+2.springboot启动类本质是一个配置类作用：1.自动创建ioc容器 2.启动tomcat
+3.springboot由于继承了父项目，所以在导入很多依赖时可以不写版本号，因为父项目中设置好了不冲突的依赖
+4.springboot的yaml文件中可以利用active同时激活多个配置文件
+5.打包前要在yaml文件中添加打包依赖
